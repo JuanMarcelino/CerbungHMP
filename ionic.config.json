@@ -1,0 +1,7 @@
+{
+  "name": "cerbungHMP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
