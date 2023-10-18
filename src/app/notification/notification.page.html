@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="medium" mode="ios">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Notification
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">notification</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>09/09/2023 <br> Bagas to Contributes</ion-label>
+      <ion-button slot="end" fill="clear" >Respond</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>08/09/2023 <br> Tono Request to Contributes</ion-label>
+      <ion-button slot="end" fill="clear">Respond</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>02/09/2023 <br> Harul Request to Contributes</ion-label>
+      <ion-button slot="end" fill="clear" routerLink="/respond">Respond</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>28/08/2023 <br> Muhammad Arryan publish new Cerbung</ion-label>
+      <ion-button slot="end" fill="clear" routerLink="/read">View</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>16/01/2023 <br> Frederico Manuel publish new cerbung</ion-label>
+      <ion-button slot="end" fill="clear">View</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

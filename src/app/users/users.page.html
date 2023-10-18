@@ -1,0 +1,186 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="medium" mode="ios">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-button slot="end" color="medium" routerLink="/notification">
+      <ion-icon name="notifications-outline"></ion-icon>
+    </ion-button>
+    <ion-title>
+      Users
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Users</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-segment [(ngModel)]="jenistampilan">
+    <ion-segment-button value="Most Liked">
+      <ion-label>Most Liked</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="Following">
+      <ion-label>Following</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-content expand="inset" *ngIf="jenistampilan=='Most Liked'">
+    <ion-content color="light">
+      <ion-list [inset]="true">
+        <ion-item-sliding>
+          <ion-item [button]="true">
+            <ion-avatar aria-hidden="true" slot="start">
+              <img alt="" src="https://my.ubaya.ac.id/img/mhs/160721044_l.jpg" />
+            </ion-avatar>
+            <ion-label>Juan Marcelino</ion-label>
+            <ion-badge color="dark" slot="end">171</ion-badge>
+          </ion-item>
+          <ion-item-options slot="end">
+            <ion-item-option color="warning">
+              <ion-icon slot="icon-only" name="pin"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="tertiary">
+              <ion-icon slot="icon-only" name="share"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="danger" expandable="true">
+              <ion-icon slot="icon-only" name="trash"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+
+        <ion-item-sliding routerLink="/profile-lain">
+          <ion-item [button]="true">
+            <ion-avatar aria-hidden="true" slot="start">
+              <img alt="" src="https://my.ubaya.ac.id/img/mhs/160721056_l.jpg" />
+            </ion-avatar>
+            <ion-label>Frederico Manuel</ion-label>
+            <ion-badge color="dark" slot="end">141</ion-badge>
+          </ion-item>
+          <ion-item-options slot="end">
+            <ion-item-option color="warning">
+              <ion-icon slot="icon-only" name="pin"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="tertiary">
+              <ion-icon slot="icon-only" name="share"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="danger" expandable="true">
+              <ion-icon slot="icon-only" name="trash"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item [button]="true">
+            <ion-avatar aria-hidden="true" slot="start">
+              <img alt="" src="https://my.ubaya.ac.id/img/mhs/160721049_l.jpg" />
+            </ion-avatar>
+            <ion-label>Muhammad Arryan</ion-label>
+            <ion-badge color="dark" slot="end">98</ion-badge>
+          </ion-item>
+          <ion-item-options slot="end">
+            <ion-item-option color="warning">
+              <ion-icon slot="icon-only" name="pin"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="tertiary">
+              <ion-icon slot="icon-only" name="share"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="danger" expandable="true">
+              <ion-icon slot="icon-only" name="trash"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+        <ion-item-sliding>
+          <ion-item [button]="true">
+            <ion-avatar aria-hidden="true" slot="start">
+              <img alt="" src="https://my.ubaya.ac.id/img/mhs/160721054_l.jpg" />
+            </ion-avatar>
+            <ion-label>Azka Sumantri</ion-label>
+            <ion-badge color="dark" slot="end">250</ion-badge>
+          </ion-item>
+          <ion-item-options slot="end">
+            <ion-item-option color="warning">
+              <ion-icon slot="icon-only" name="pin"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="tertiary">
+              <ion-icon slot="icon-only" name="share"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="danger" expandable="true">
+              <ion-icon slot="icon-only" name="trash"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+    </ion-content>
+  </ion-content>
+
+  <ion-content expand="inset" *ngIf="jenistampilann=='Following'">
+    <ion-content color="light">
+      <ion-list [inset]="true">
+        <ion-item-sliding>
+          <ion-item [button]="true">
+            <ion-avatar aria-hidden="true" slot="start">
+              <img alt="" src="https://my.ubaya.ac.id/img/mhs/160721044_l.jpg" />
+            </ion-avatar>
+            <ion-label>Juan Marcelino</ion-label>
+            <ion-badge color="dark" slot="end">171</ion-badge>
+          </ion-item>
+          <ion-item-options slot="end">
+            <ion-item-option color="warning">
+              <ion-icon slot="icon-only" name="pin"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="tertiary">
+              <ion-icon slot="icon-only" name="share"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="danger" expandable="true">
+              <ion-icon slot="icon-only" name="trash"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+        <ion-item-sliding routerLink="/profile-lain">
+          <ion-item [button]="true">
+            <ion-avatar aria-hidden="true" slot="start">
+              <img alt="" src="https://my.ubaya.ac.id/img/mhs/160721056_l.jpg" />
+            </ion-avatar>
+            <ion-label>Frederico Manuel</ion-label>
+            <ion-badge color="dark" slot="end">141</ion-badge>
+          </ion-item>
+          <ion-item-options slot="end">
+            <ion-item-option color="warning">
+              <ion-icon slot="icon-only" name="pin"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="tertiary">
+              <ion-icon slot="icon-only" name="share"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="danger" expandable="true">
+              <ion-icon slot="icon-only" name="trash"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+          <ion-item [button]="true">
+            <ion-avatar aria-hidden="true" slot="start">
+              <img alt="" src="https://my.ubaya.ac.id/img/mhs/160721049_l.jpg" />
+            </ion-avatar>
+            <ion-label>Muhammad Arryan</ion-label>
+            <ion-badge color="dark" slot="end">98</ion-badge>
+          </ion-item>
+          <ion-item-options slot="end">
+            <ion-item-option color="warning">
+              <ion-icon slot="icon-only" name="pin"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="tertiary">
+              <ion-icon slot="icon-only" name="share"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="danger" expandable="true">
+              <ion-icon slot="icon-only" name="trash"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+    </ion-content>
+  </ion-content>
+</ion-content>
