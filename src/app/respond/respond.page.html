@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="medium" mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-button slot="end" color="medium" routerLink="/notification">
+      <ion-icon name="notifications-outline"></ion-icon>
+    </ion-button>
+    <ion-title>
+      Respond
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">respond</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card class="agaknaik">
+    <ion-card-content class="tengah_atasberjarak">
+      <div id="frame">
+        <ion-avatar labelPlacement="end">
+          <img alt="Silhouette of a person's head" src="https://my.ubaya.ac.id/img/mhs/160721055_l.jpg" />
+        </ion-avatar>
+      </div>
+      <br>
+      Harul Haq <br> 10 Likes | 1 Cerbungs Created <br> Latest post: 20/07/2023
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="Silhouette of mountains"
+            src="https://cdn-2.tstatic.net/manado/foto/bank/images2/palung-mariana-terdalam-di-dunia.jpg" />
+        </ion-thumbnail>
+        <ion-label>Palung Mariana<br> Last update: 20/07/2023<br> <ion-icon
+            name="thumbs-up-sharp"></ion-icon> 90</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-button id="btnDecline" fill="solid" expand="block" color="dark" size="default"
+    routerLink="/notification">Decline</ion-button>
+  <ion-alert trigger="btnDecline" header="Decline" message="Decline Complete!!!" [buttons]="alertButtons"></ion-alert>
+  <ion-button id="btnApprove" fill="solid" expand="block" color="dark" size="default"
+    routerLink="/notification">Approve</ion-button>
+  <ion-alert trigger="btnApprove" header="Approve" message="Approve Succesfully!!!"
+    [buttons]="alertButtons"></ion-alert>
+</ion-content>
